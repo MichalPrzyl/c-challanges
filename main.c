@@ -70,13 +70,9 @@ int main() {
       new_base_arr = base;
     }
     new_arr = create_new_smaller_arr(new_base_arr, N - i);
-    // print_array(new_arr, N - i - 1);
     int arr_value = get_sum_of_arr(new_arr, N - 1);
     output_sum += arr_value;
-    new_base_arr = new_arr;
 
-    // free(new_base_arr);
-    // free(new_arr);
   }
   printf("output sum: %d\n", output_sum);
 
